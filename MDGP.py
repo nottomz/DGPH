@@ -36,5 +36,5 @@ async def on_reaction_add(reaction, user):
 #    if str(reaction.emoji) == "\U00002754":
 #        await reaction.message.channel.send(user.name + "님이 예비인원 합류를 취소하셨습니다.")
 
-access_token = os.environ["BOT_TOKEN"]
+access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
