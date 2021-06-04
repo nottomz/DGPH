@@ -17,7 +17,7 @@ async def on_message(message):
         embed.add_field(name="Spare - \U00002754", value="하단 물음표 이모지를 클릭해 예비인원신청", inline=True)
         embed.set_footer(text="Made by NOTTOMZ", icon_url="https://cdn.discordapp.com/attachments/848922428893167616/850365287810465812/90685415899733960.jpg")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/848922428893167616/848929661256728596/JPEG_20191207_2153201.jpg")
-        await message.channel.purge(limit=0)
+        await message.channel.purge(limit=1)
         msg = await message.channel.send(embed=embed)     
         await msg.add_reaction("\U00002705") #합류
         await msg.add_reaction("\U00002754") #예비
